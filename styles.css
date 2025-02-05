@@ -79,7 +79,7 @@ body{
     flex-direction: column;
     gap: .5em;
 
-    padding: 1.5rem;
+    padding: 1.6rem;
     border-radius: 10px;
     border-top: 4px solid;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16), 
@@ -111,6 +111,14 @@ body{
     font-weight: 200;
     font-size: .8rem;
 }
+
+.card__icon {
+    width: 3em;
+    height: 3em;
+    align-self: flex-end;
+    margin-top: 1.3em;
+}
+
 footer {
     font-size: .7rem;
     text-align: center;
