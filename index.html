@@ -8,40 +8,43 @@
   
   <title>Frontend Mentor | Four card feature section</title>
 </head>
-<body>
+<body >
   <main>
-    <h1>Reliable, efficient delivery</h1>
-    <h2><strong>Powered by Technology</strong></h2>
-    <p>Our Artificial Intelligence powered tools use millions of project data points 
-      to ensure that your project is successful.</p>
+    <section class="header" aria-labelledby="header-title" aria-describedby="header-text">
+      <h1 id="header-title" class="header__title">Reliable, efficient delivery</h1>
+      <h2 class="header__subtitle">Powered by Technology</h2>
+      <p id="header-text" class="header__text">
+        Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful.
+      </p>
+    </section>
 
-    <section aria-labelledby="features-title">
-      <h2 id="features-title" hidden>Features</h2>
+    <section class="features" aria-labelledby="features-title">
+      <h2 id="features-title" class="features__title" hidden>Features</h2>
 
-      <article aria-labelledby="supervisor-title">
-        <h3 id="supervisor-title">Supervisor</h3>
-        <p>Monitors activity to identify project roadblocks.</p>
+      <article class="feature feature--supervisor" aria-labelledby="supervisor-title">
+        <h3 id="supervisor-title" class="feature__title">Supervisor</h3>
+        <p class="feature__description">Monitors activity to identify project roadblocks.</p>
       </article>
 
-      <article aria-labelledby="team-builder-title">
-        <h3 id="team-builder-title">Team Builder</h3>
-        <p>Scans our talent network to create the optimal team for your project.</p>
+      <article class="feature feature--team-builder" aria-labelledby="team-builder-title">
+        <h3 id="team-builder-title" class="feature__title">Team Builder</h3>
+        <p class="feature__description">Scans our talent network to create the optimal team for your project.</p>
       </article>
 
-      <article aria-labelledby="karma-title">
-        <h3 id="karma-title">Karma</h3>
-        <p>Regularly evaluates our talent to ensure quality.</p>
+      <article class="feature feature--karma" aria-labelledby="karma-title">
+        <h3 id="karma-title" class="feature__title">Karma</h3>
+        <p class="feature__description">Regularly evaluates our talent to ensure quality.</p>
       </article>
 
-      <article aria-labelledby="calculator-title">
-        <h3 id="calculator-title">Calculator</h3>
-        <p>Uses data from past projects to provide better delivery estimates.</p>
+      <article class="feature feature--calculator" aria-labelledby="calculator-title">
+        <h3 id="calculator-title" class="feature__title">Calculator</h3>
+        <p class="feature__description">Uses data from past projects to provide better delivery estimates.</p>
       </article>
-
     </section>
   </main>
   
-  <footer role="contentinfo">
+  <footer class="footer" role="contentinfo">
     <p class="footer__text">
       Challenge by 
       <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank" title="Visit Frontend Mentor">Frontend Mentor</a>. 
@@ -50,4 +53,5 @@
     </p>
   </footer>
 </body>
+
 </html>
