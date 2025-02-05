@@ -38,6 +38,11 @@ body{
     grid-template-rows: 1fr auto;
 }
 
+main {
+    display: grid;
+    place-items: center;
+}
+
 .header {
     text-align: center;
     margin-top: 3.5rem;
@@ -77,10 +82,10 @@ body{
 .feature {
     display: flex;
     flex-direction: column;
+    max-width: 19rem;
     gap: .5em;
-
     padding: 1.6rem;
-    border-radius: 10px;
+    border-radius: 5px;
     border-top: 4px solid;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16), 
                 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -110,6 +115,7 @@ body{
 .feature__description {
     font-weight: 200;
     font-size: .8rem;
+    letter-spacing: 0.01em;
 }
 
 .card__icon {
@@ -128,4 +134,45 @@ footer {
 
 footer a {
     color: hsl(228, 45%, 44%)
+}
+
+@media (min-width: 500px) {
+
+    .features {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .features {
+        gap: 1.6rem;
+        margin: 0 5rem;
+
+        grid-template-areas:
+            ". . ."
+            ". team-builder ."
+            "supervisor team-builder calculator"
+            "supervisor karma calculator"
+            ". karma ."
+            ". . .";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr) auto;
+    }
+
+    .feature--supervisor {
+        grid-area: supervisor;
+    }
+
+    .feature--team-builder {
+        grid-area: team-builder;
+    }
+
+    .feature--karma {
+        grid-area: karma;
+    }
+
+    .feature--calculator {
+        grid-area: calculator;
+    }
 }
